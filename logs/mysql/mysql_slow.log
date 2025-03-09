@@ -1,0 +1,69 @@
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 0  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+/usr/sbin/mysqld, Version: 8.0.41 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+# Time: 2025-03-09T05:27:11.398080Z
+# User@Host: root[root] @  [192.168.65.1]  Id:    13
+# Query_time: 0.001782  Lock_time: 0.000015 Rows_sent: 1  Rows_examined: 1
+use portafolio;
+SET timestamp=1741498031;
+SELECT * FROM portafolio.users
+LIMIT 0, 1000;
+# Time: 2025-03-09T05:27:11.404353Z
+# User@Host: root[root] @  [192.168.65.1]  Id:    12
+# Query_time: 0.000694  Lock_time: 0.000008 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1741498031;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 333;
+# Time: 2025-03-09T05:27:11.405576Z
+# User@Host: root[root] @  [192.168.65.1]  Id:    12
+# Query_time: 0.000767  Lock_time: 0.000006 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1741498031;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 333;
+# Time: 2025-03-09T05:30:32.970143Z
+# User@Host: root[root] @  [192.168.65.1]  Id:    13
+# Query_time: 0.004839  Lock_time: 0.000006 Rows_sent: 1000  Rows_examined: 1000
+SET timestamp=1741498232;
+SELECT * FROM `medical-system`.appointments
+LIMIT 0, 1000;
+# Time: 2025-03-09T05:30:32.974361Z
+# User@Host: root[root] @  [192.168.65.1]  Id:    12
+# Query_time: 0.000280  Lock_time: 0.000001 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1741498232;
+SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 436;
+# Time: 2025-03-09T05:30:32.975191Z
+# User@Host: root[root] @  [192.168.65.1]  Id:    12
+# Query_time: 0.000257  Lock_time: 0.000001 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1741498232;
+SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 436;

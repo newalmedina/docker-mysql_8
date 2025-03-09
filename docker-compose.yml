@@ -1,0 +1,26 @@
+services:
+  mysql:
+    image: mysql:8.0
+    ports:
+      - ${MYSQL_PORT}:3306
+    networks:
+      web_net:
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      # - ${MYSQL_DATA_DIR}:/var/lib/mysql
+      - ${MYSQL_LOG_DIR}:/var/log/mysql
+      - ${MYSQL_CONFIG_DIR}/my.cnf:/etc/my.cnf
+      - ${MYSQL_CONFIG_DIR}/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+      # - mysql_data:/var/lib/mysql
+    restart: always
+
+networks:
+  web_net:
+    driver: bridge
+
+volumes:
+  mysql_data:
